@@ -1,0 +1,43 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=alegreya-sans:100,400,700');
+
+// Normalize
+@import "../css/normalize.css";
+
+// Variables
+@import 'variables';
+
+// Mixin
+@import 'mixin';
+
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    
+    background: rgb(119,161,217);
+    background: linear-gradient(90deg, $other1 0%, $bg2 100%);
+    color: $font;
+}
+
+#app {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+// Media queries
+//------------------------
+
+@media (max-width: 450px) {
+  body {
+    background: rgb(119,161,217);
+    background: linear-gradient(90deg, $bg2 0%, $bg1 100%)
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    margin: 0;
+  }
+}
